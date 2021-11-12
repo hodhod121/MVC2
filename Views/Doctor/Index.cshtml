@@ -1,0 +1,9 @@
+﻿@model WebApplication1.Models.DoctorModel
+
+Enter your body temprature for checking of your health.
+<form asp-action="Index" asp-controller="Doctor">
+    <label asp-for="temperature">Your Feber</label>
+    <input asp-for="temperature" placeholder="37" required />
+    <input type="submit" />
+</form>
+<p>@ViewBag.TempResult</p>

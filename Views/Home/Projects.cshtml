@@ -1,0 +1,29 @@
+﻿@model List<WebApplication1.Models.HomeModel>
+<div class="d-flex justify-content-center text-left flex-column text-light bg-secondary container-fluid m-0 p-0">
+    <h2>Projects</h2>
+    <ul>
+        <p>My projects about react, react -native, nodejs and PHP</p>
+        <li>https://github.com/hodhod121</li>
+        <p>Projects about C# and .NET</p>
+        <li>https://github.com/hodhod212</li>
+    </ul>
+</div>
+    <caption><h1>List of my friends</h1></caption>
+<table border="1" class="container-fluid bg-light m-auto text-center">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Age</th>
+    </tr>
+    @foreach (var u in Model)
+    {
+        <tr>
+            <td>@u.Name</td>
+            <td>@u.Email</td>
+            <td>@u.Phone</td>
+            <td>@u.Age</td>
+        </tr>
+    }
+
+</table>
